@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 
 cap = cv2.VideoCapture(1)
@@ -18,14 +17,10 @@ while True:
                                sigmaX=10, sigmaY=10)
     cv2.imshow('blurred', blurred)
 
-    def dodgeV2(image, mask):
+    def dodge(image, mask):
         return cv2.divide(image, 255 - mask, scale=256)
 
-    def burnV2(image, mask):
-        val = 255 - cv2.divide(255 - image, 255 - mask, scale=256)
-        return val
-
-    final = dodgeV2(gray, blurred)
+    final = dodge(gray, blurred)
 
     cv2.imshow('final', final)
     cv2.imshow('original', img)
