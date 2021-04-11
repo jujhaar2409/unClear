@@ -22,6 +22,8 @@ while True:
     upper_col = np.array([130, 255, 255])
     lower_col = np.array([90, 50, 50])
     mask = cv2.inRange(hsv, lower_col, upper_col)
+    red = np.copy(frame)
+    red[mask > 0] = (0, 0, 255)
 
     result = cv2.bitwise_and(frame, frame, mask=mask)
 
@@ -32,6 +34,7 @@ while True:
     cv2.imshow('final', result)
     cv2.imshow('mask', mask)
     cv2.imshow('original', frame)
+    cv2.imshow('red', red)
 
 
     k = cv2.waitKey(1)
