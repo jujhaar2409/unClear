@@ -1,46 +1,52 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(1)
+img = cv2.imread("img.png")
+img = cv2.resize(img, (200, 200))
+height, width, _ = img.shape
 
-while True:
-    ret, frame = cap.read()
-    frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
-    width = int(cap.get(3))
-    height = int(cap.get(4))
-    # image = np.zeros(frame.shape, np.uint8)
-    # smaller_frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
-    # image[:height//2, :width//2] = cv2.rotate(smaller_frame, cv2.ROTATE_180)
-    # image[height//2:, :width//2] = smaller_frame
-    # image[:height//2, width//2:] = cv2.rotate(smaller_frame, cv2.ROTATE_180)
-    # image[height//2:, width//2:] = smaller_frame
+smaller_img = cv2.resize(img, (0, 0), fx=0.5, fy=0.5)
 
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    
-    # upper_col = np.array([20, 150, 255])
-    # lower_col = np.array([0, 10, 60])
-    upper_col = np.array([130, 255, 255])
-    lower_col = np.array([90, 50, 50])
-    mask = cv2.inRange(hsv, lower_col, upper_col)
-    red = np.copy(frame)
-    red[mask > 0] = (0, 0, 255)
+image = np.zeros(img.shape, np.uint8)
+image[:height//2, :width//2] = smaller_img
+cv2.imshow("1", image)
 
-    result = cv2.bitwise_and(frame, frame, mask=mask)
+image = np.zeros(img.shape, np.uint8)
+image[height//2:, :width//2] = smaller_img
+cv2.imshow("2", image)
 
-    # cv2.imshow('frame', image)
-    # cv2.imshow('frame', cv2.resize(frame, (0,0), fx = 1/2, fy = 1/2))
-    # cv2.imshow('frame', frame)
-    # cv2.imshow('frame', frame)
-    cv2.imshow('final', result)
-    cv2.imshow('mask', mask)
-    cv2.imshow('original', frame)
-    cv2.imshow('red', red)
+image = np.zeros(img.shape, np.uint8)
+image[:height//2, width//2:] = smaller_img
+cv2.imshow("3", image)
+
+image = np.zeros(img.shape, np.uint8)
+image[height//2:, width//2:] = smaller_img
+cv2.imshow("4", image)
+
+image = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
+cv2.imshow("5", image)
+
+image = np.zeros(img.shape, np.uint8)
+image[height//2:, :width//2] = cv2.rotate(smaller_img, cv2.ROTATE_90_CLOCKWISE)
+cv2.imshow("6", image)
+
+image = np.zeros(img.shape, np.uint8)
+image[:height//2, width//2:] = cv2.rotate(smaller_img, cv2.ROTATE_180)
+cv2.imshow("7", image)
+
+image = np.zeros(img.shape, np.uint8)
+image[height//2:, width//2:] = cv2.rotate(smaller_img, cv2.ROTATE_90_COUNTERCLOCKWISE)
+cv2.imshow("8", image)
 
 
-    k = cv2.waitKey(1)
-    if k == ord('q'):
-        break
+image = cv2.GaussianBlur(img, ksize=(7, 7),
+                           sigmaX=10, sigmaY=10)
+cv2.imshow("9", image)
 
-cap.release()
+image = cv2.medianBlur(img, 7)
+cv2.imshow("10", image)
+
+cv2.imshow("original", img)
+
+k = cv2.waitKey(0)
 cv2.destroyAllWindows()
-cv2.waitKey(1)
