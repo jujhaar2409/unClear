@@ -21,7 +21,7 @@ The initial phases of the project involved getting to know many of the tools tha
 
 ### OpenCV Basics
 
-We learnt a lot about opencv and how to use it in our project in this stage of SoC. Rotating, cropping, blurring, and many more operations were learnt. We also had to use opencv to create a sketch image of ourselves from a live video feed as our assignment. The assignments are [here](./assignments).
+We learnt a lot about opencv and how to use it in our project in this stage of SoC. Rotating, cropping, blurring, and many more operations were learnt. We also had to use opencv to create a sketch image of ourselves from a live video feed as our assignment. The assignments are [here](./opencv).
 
 ### Learning the Basics of Maching Learning
 
@@ -29,12 +29,12 @@ In this phase we mainly learnt about the theoretical aspects of machine learning
 
 ### Maching Learning with Tensorflow
 
-This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. The code can be found in [this file](./assignments/MNIST_num_recog.ipynb).
+This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. The code can be found in [this file](./MNIST_digit_recognition/MNIST_num_recog.ipynb).
 
 ### Learning about different architectures of ML models
 
-We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches. The code for this is [here](./assignments/sketch_colorizer.ipynb).
+We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches. The code for this is [here](./sketch_colorizer/sketch_colorizer.ipynb).
 
 ### ESRGAN
 
-ESRGAN, which is short for Enhanced Super-Resolution Generative Adversarial Network, was the final goal of our SoC. We had to read papers and articles about this topic and finally create our own implementation. A detailed account of the implementation is given in the README.md in the final directory. The code also resides there.
+ESRGAN, which is short for Enhanced Super-Resolution Generative Adversarial Network, was the final goal of our SoC. We had to read papers and articles about this topic and finally create our own implementation. A detailed account of the implementation is given [here](./ESRGAN/README.md). The code also resides [here](./ESRGAN).
