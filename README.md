@@ -1,5 +1,9 @@
 # (un)clear
 
+This project is based on Single Image Super-resolution using Machine Learning. The technique we used to finally implement this is called ESRGAN. More can be learned about this from [this paper](https://arxiv.org/abs/1809.00219).
+
+The initial phases of the project involved getting to know many of the tools that we finally required to complete the implementation. To get familiar with these we also did many mini-projects associated with certain topics. The code for the mini-projects is in the assignments directory. The Project itself started in the first week of April.
+
 ## Outline
 
 1. OpenCV basics
@@ -25,12 +29,12 @@ In this phase we mainly learnt about the theoretical aspects of machine learning
 
 ### Maching Learning with Tensorflow
 
-This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. 
+This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. The code can be found in [this file](./assignments/MNIST_num_recog.ipynb)
 
 ### Learning about different architectures of ML models
 
-We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches.
+We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches. The code for this is [here](./assignments/sketch_colorizer.ipynb)
 
 ### ESRGAN
 
-ESRGAN, which is short for Enhanced Super-Resolution Generative Adversarial Network, was the final goal of our SoC. We had to read papers and articles about this topic and finally create our own implementation. A detailed account of the implementation is given in the README.md in the final directory.
+ESRGAN, which is short for Enhanced Super-Resolution Generative Adversarial Network, was the final goal of our SoC. We had to read papers and articles about this topic and finally create our own implementation. A detailed account of the implementation is given in the README.md in the final directory. The code also resides there.
