@@ -29,11 +29,11 @@ In this phase we mainly learnt about the theoretical aspects of machine learning
 
 ### Maching Learning with Tensorflow
 
-This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. The code can be found in [this file](./assignments/MNIST_num_recog.ipynb)
+This phase was mostly hands on. We had multiple coding assignments in this phase through the way of the Tensorflow course on Udemy that we followed. This taught us to apply the previously learned theory in a practical setup. We built a digit recognizer using CNNs in this section. The code can be found in [this file](./assignments/MNIST_num_recog.ipynb).
 
 ### Learning about different architectures of ML models
 
-We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches. The code for this is [here](./assignments/sketch_colorizer.ipynb)
+We learnt about different types of ML models like RESNETs, GAN, CGAN and then implemented our learning in a project which was the anime sketch colorizer. This project involves the use of a CGAN to generate colored images from pencil sketches. The code for this is [here](./assignments/sketch_colorizer.ipynb).
 
 ### ESRGAN
 
