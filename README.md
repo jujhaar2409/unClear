@@ -21,7 +21,7 @@ The initial phases of the project involved getting to know many of the tools tha
 
 ### OpenCV Basics
 
-We learnt a lot about opencv and how to use it in our project in this stage of SoC. Rotating, cropping, blurring, and many more operations were learnt. We also had to use opencv to create a sketch image of ourselves from a live video feed as our assignment.
+We learnt a lot about opencv and how to use it in our project in this stage of SoC. Rotating, cropping, blurring, and many more operations were learnt. We also had to use opencv to create a sketch image of ourselves from a live video feed as our assignment. The assignments are [here](./assignments).
 
 ### Learning the Basics of Maching Learning
 
