@@ -16,30 +16,57 @@ Some of the results, which can also be found in the notebooks are given below.
 
 In each of the below images, the image on the left is the input to the generator, the image in the center is the target output/ground truth and the image on the right is the image produced by the ESRGAN model.
 
+Some of the best sample images can be found in the [imgs](./imgs) directory. The photos are further sorted into directories based on which notebook they are related to.
+
+### From the fourth notebook
+
+<div align="center">
+<img src="imgs/imgs4/img1.png" width="630" height="200">
+<img src="imgs/imgs4/img2.png" width="630" height="200">
+<img src="imgs/imgs4/img3.png" width="630" height="200">
+<img src="imgs/imgs4/img4.png" width="630" height="200">
+<img src="imgs/imgs4/img5.png" width="630" height="200">
+<img src="imgs/imgs4/img6.png" width="630" height="200">
+<img src="imgs/imgs4/img7.png" width="630" height="200">
+<img src="imgs/imgs4/img8.png" width="630" height="200">
+<img src="imgs/imgs4/img9.png" width="630" height="200">
+<img src="imgs/imgs4/img10.png" width="630" height="200">
+<img src="imgs/imgs4/img11.png" width="630" height="200">
+<img src="imgs/imgs4/img12.png" width="630" height="200">
+</div>
+
 ### From the first notebook
 
-![](./imgs/imgs1/img1.png)
-![](./imgs/imgs1/img2.png)
-![](./imgs/imgs1/img3.png)
-![](./imgs/imgs1/img4.png)
-![](./imgs/imgs1/img5.png)
+<div align="center">
+<img src="imgs/imgs1/img1.png" width="630" height="200">
+<img src="imgs/imgs1/img2.png" width="630" height="200">
+<img src="imgs/imgs1/img3.png" width="630" height="200">
+<img src="imgs/imgs1/img4.png" width="630" height="200">
+<img src="imgs/imgs1/img5.png" width="630" height="200">
+</div>
 
 ### From the second notebook
 
-![](./imgs/imgs2/img1.png)
-![](./imgs/imgs2/img2.png)
-![](./imgs/imgs2/img3.png)
-![](./imgs/imgs2/img4.png)
-![](./imgs/imgs2/img5.png)
-![](./imgs/imgs2/img6.png)
-![](./imgs/imgs2/img7.png)
-![](./imgs/imgs2/img8.png)
-![](./imgs/imgs2/img9.png)
+<div align="center">
+<img src="imgs/imgs2/img1.png" width="630" height="200">
+<img src="imgs/imgs2/img2.png" width="630" height="200">
+<img src="imgs/imgs2/img3.png" width="630" height="200">
+<img src="imgs/imgs2/img4.png" width="630" height="200">
+<img src="imgs/imgs2/img5.png" width="630" height="200">
+<img src="imgs/imgs2/img6.png" width="630" height="200">
+<img src="imgs/imgs2/img7.png" width="630" height="200">
+<img src="imgs/imgs2/img8.png" width="630" height="200">
+<img src="imgs/imgs2/img9.png" width="630" height="200">
+</div>
 
 ### From the third notebook
 
-![](./imgs/imgs3/img1.png)
-![](./imgs/imgs3/img2.png)
-![](./imgs/imgs3/img3.png)
-![](./imgs/imgs3/img4.png)
-![](./imgs/imgs3/img5.png)
+<div align="center">
+<img src="imgs/imgs3/img1.png" width="630" height="200">
+<img src="imgs/imgs3/img2.png" width="630" height="200">
+<img src="imgs/imgs3/img3.png" width="630" height="200">
+<img src="imgs/imgs3/img4.png" width="630" height="200">
+<img src="imgs/imgs3/img5.png" width="630" height="200">
+</div>
+
+
