@@ -38,3 +38,7 @@ We learnt about different types of ML models like RESNETs, GAN, CGAN and then im
 ### ESRGAN
 
 ESRGAN, which is short for Enhanced Super-Resolution Generative Adversarial Network, was the final goal of our SoC. We had to read papers and articles about this topic and finally create our own implementation. A detailed account of the implementation is given [here](./ESRGAN/README.md). The code also resides [here](./ESRGAN).
+
+## License and copyright
+
+Licensed under the [MIT License](LICENSE).
